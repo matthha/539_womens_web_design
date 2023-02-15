@@ -95,6 +95,8 @@ nav{
     font-size: 38px;
     font-weight: bold;
     color: black;
+    text-decoration: underline;
+    text-decoration-style:wavy;
 }
 
 .skipper{
