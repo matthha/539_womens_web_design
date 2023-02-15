@@ -1,0 +1,109 @@
+
+body{
+    margin: 30px;
+    padding: 6px;
+    background-color: lightgray;
+    color: black;
+}
+main {
+    font-weight: bold;
+    display: grid;
+    grid-template-columns: 3fr 3fr 3fr;
+
+}
+.container {
+    display: grid; 
+    grid-template-columns: 3fr 3fr 3fr 3fr;
+    }
+    
+h1 {
+    font-size: 25px;
+}
+h2{
+    font-size: 19px;
+    margin: 12px 0px 2px 12px;
+    text-decoration-line: underline;
+}
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+   /* padding-block-start: 12px; */
+    padding: 12px;
+    /* background: rgb(249, 243, 243);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(248,0,255,1) 0%, rgba(255,55,106,0.35362504376750703) 38%, rgba(255,0,255,1) 70%, rgba(191,0,126,1) 100%); */
+}
+
+img {
+    margin: 20px;
+    padding: 20px;
+    border: hidden 90px;
+    width: 200px;
+    
+}
+ div.card:nth-child(2n+2) img{
+    border: solid 10px red;
+    padding: 10px;
+
+}
+div.card img:hover {
+    border: solid 20px rgb(23, 6, 180);
+    padding: 0px;
+}
+ol {
+    margin: 6px;
+}
+figure{
+    margin: 20px;
+}
+ul {
+    list-style-type: alpha;
+    font-size: 14px;
+    padding: 12px;
+}
+nav > ul > li > a {
+    text-decoration-line: none;
+    font-size: 30px;
+    
+    border-width: 5px 0px 0px 7px
+}
+li {
+    padding: 0px 10px;
+}
+div {
+    margin: 10pt;
+    justify-self: stretch;
+}
+dt {
+    color: blue;
+    text-decoration: underline;
+    text-transform: uppercase;
+    font-weight: bold;
+    
+}
+dl {
+    color: black;
+}
+footer {
+    border: 5px solid black;
+    font-size: 8px;
+}
+nav{
+    color: red;
+}
+
+.current {
+    font-size: 38px;
+    font-weight: bold;
+    color: black;
+}
+
+.skipper{
+    position:absolute;
+    left: -1000px;
+}
+
+.skipper:focus{
+    position:relative;
+    left:0px;
+
+}
