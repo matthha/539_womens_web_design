@@ -45,7 +45,7 @@ img {
     padding: 10px;
 
 }
-div.card img:hover {
+main img:hover, div.card img:hover {
     border: solid 20px rgb(23, 6, 180);
     padding: 0px;
 }
@@ -106,4 +106,8 @@ nav{
     position:relative;
     left:0px;
 
+}
+.about {
+    display:flex;
+    flex-wrap: wrap;
 }
