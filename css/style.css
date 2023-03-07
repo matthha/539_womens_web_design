@@ -8,12 +8,12 @@ body{
 main {
     font-weight: bold;
     display: grid;
-    grid-template-columns: 3fr 3fr 3fr;
+    grid-template-columns: 1fr;
 
 }
 .container {
     display: grid; 
-    grid-template-columns: 3fr 3fr 3fr 3fr;
+    grid-template-columns: 1fr;
     }
     
 h1 {
@@ -33,22 +33,41 @@ p {
     background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(248,0,255,1) 0%, rgba(255,55,106,0.35362504376750703) 38%, rgba(255,0,255,1) 70%, rgba(191,0,126,1) 100%); */
 }
 
-img {
-    margin: 20px;
-    padding: 20px;
-    border: hidden 90px;
-    width: 200px;
-    
-}
- div.card:nth-child(2n+2) img{
-    border: solid 10px red;
-    padding: 10px;
+    img {
+        display: block;
+        justify-self: center;
+        border-radius: 10px;
+        padding: 20px;
+        border: hidden 90px;
+        width: 200px;
+        margin: auto;
+    }
+    div.card:nth-child(2n+2) img{
+        border: solid 10px red;
+        border-radius: 10px;
+        padding: 10px;
+
+    }
+    main img:hover, div.card img:hover {
+        border: solid 20px rgb(23, 6, 180);
+        padding: 0px;
+        
+    }
+    .bigpic {
+        width: auto;
+    }
+
+div.card:nth-child(3n+3) {
+    background-color: rgba(74, 74, 73, 0.392);
+    border-radius: 15px;
 
 }
-main img:hover, div.card img:hover {
-    border: solid 20px rgb(23, 6, 180);
-    padding: 0px;
+div.card:nth-child(3n+2) {
+    background-color: rgba(254, 254, 254, 0.392);
+    border-radius: 15px;
+
 }
+
 ol {
     margin: 6px;
 }
@@ -56,22 +75,25 @@ figure{
     margin: 20px;
 }
 ul {
-    list-style-type: alpha;
+    list-style-type: none;
     font-size: 14px;
     padding: 12px;
 }
 nav > ul > li > a {
     text-decoration-line: none;
     font-size: 30px;
-    
     border-width: 5px 0px 0px 7px
 }
-li {
+li a{
     padding: 0px 10px;
+    color: darkred;
+    background-color: white;
+    border-radius: 20px;
 }
 div {
     margin: 10pt;
     justify-self: stretch;
+    padding: 10px
 }
 dt {
     color: blue;
@@ -113,4 +135,27 @@ nav{
     display:flex;
     flex-direction: column;
     flex-wrap: wrap;
+}
+@media screen and (min-width: 800px) {
+    .container {
+        display: grid; 
+        grid-template-columns: 3fr 3fr 3fr;
+        }
+    }
+@media screen and (min-width: 1000px) {
+    .container {
+        display: grid; 
+        grid-template-columns: 3fr 3fr 3fr 3fr;
+        }
+
+
+
+
+
+
+
+
+
+
+
 }
